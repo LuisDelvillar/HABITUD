@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Habitud - Mis hábitos</title>
+    <link rel="stylesheet" href="../css/estiloHabitud.css">
+</head>
+<body>
+<header>
+    <h1>Mis hábitos</h1>
+    <p>Organiza tus actividades y registra tu progreso diario.</p>
+</header>
+
+<main>
+    <h2>Registrar un hábito</h2>
+
+    <form id="formularioHabito">
+        <label for="nombreHabito">¿Qué hábito vas a realizar?</label>
+        <input type="text" id="nombreHabito" name="nombreHabito"
+               placeholder="Ej. Hacer ejercicio" required>
+        <h3>Programa tus días</h3>
+
+        <div class="encabezados-horario">
+            <span>Día</span>
+            <span>Hora de inicio</span>
+            <span>Duración (min)</span>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="lunes">
+                Lunes
+            </label>
+            <input type="time" name="horaLunes">
+            <input type="number" name="duracionLunes" min="1" placeholder="Minutos">
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="martes">
+                Martes
+            </label>
+            <input type="time" name="horaMartes">
+            <input type="number" name="duracionMartes" min="1" placeholder="Minutos">
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="miercoles">
+                Miércoles
+            </label>
+            <input type="time" name="horaMiercoles">
+            <input type="number" name="duracionMiercoles" min="1" placeholder="Minutos">
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="jueves">
+                Jueves
+            </label>
+            <input type="time" name="horaJueves">
+            <input type="number" name="duracionJueves" min="1" placeholder="Minutos">
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="viernes">
+                Viernes
+            </label>
+            <input type="time" name="horaViernes">
+            <input type="number" name="duracionViernes" min="1" placeholder="Minutos">
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="sabado">
+                Sábado
+            </label>
+            <input type="time" name="horaSabado">
+            <input type="number" name="duracionSabado" min="1" placeholder="Minutos">
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="domingo">
+                Domingo
+            </label>
+            <input type="time" name="horaDomingo">
+            <input type="number" name="duracionDomingo" min="1" placeholder="Minutos">
+        </div>
+
+        <label>
+            <input type="checkbox" name="repetirSemanal">
+            Repetir esta programación cada semana
+        </label>
+
+        <button type="submit">Guardar hábito</button>
+    </form>
+</main>
+
+<p><a href="panel.html">Volver al panel principal</a></p>
+<script src="../JavaScript/habitos.js"></script>
+</body>
+</html >

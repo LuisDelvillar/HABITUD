@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    padding: 30px;
+    margin: 50px auto;
+    text-align: center;
+    color: #333333;
+}
+
+main{
+    background-color: white;
+    padding: 30px;
+    margin: 50px auto;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+h1 {
+    color: green;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+label, input{
+    display: block;
+}
+label{
+    margin-top:15px;
+}
+input{
+    padding:8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+
+}
+
+.boton-menu {
+    display: block;
+    background-color: #2563eb;
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.boton-menu:hover {
+    background-color: #1d4ed8;
+}
+
+button{
+    background-color: #2563eb;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+}
+button:active{
+    transform:scale(0.98) ;
+}
+
+.boton-crear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 60px;
+    gap: 8px;
+}
+
+.icono-mas {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.boton-crear strong {
+    font-size: 20px;
+}
+
+.boton-crear small {
+    font-size: 14px;
+}
+
+nav a{
+    display: inline-block;
+    background-color: #dc2626;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Organizar cada día en una sola línea */
+main form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* Espacio reservado para el nombre del día */
+main form div label {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    margin-top: 0;
+}
+
+/* Ajustar el tamaño de las casillas */
+main form div input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+/* Reducir el ancho de la hora */
+main form div input[type="time"] {
+    width: 125px;
+}
+
+/* Reducir el ancho de la duración */
+main form div input[type="number"] {
+    width: 90px;
+}
+main form label:has(input[name="repetirSemanal"]) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+main form input[name="repetirSemanal"] {
+    width: auto;
+    margin: 0;
+}
+main form .encabezados-horario {
+    display: grid;
+    grid-template-columns: 110px 125px 90px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
